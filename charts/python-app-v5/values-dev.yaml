@@ -1,0 +1,12 @@
+replicaCount: 1
+
+image:
+  repository: rafaelvieira96/python-app-v5
+  pullPolicy: IfNotPresent
+  # tag: python-app-v5-dev-latest
+  tag: latest
+
+resources:
+  requests:
+    cpu: 40m
+    memory: 40M
