@@ -41,7 +41,7 @@ jobs:
 
   cd:
     needs: ci
-    runs-on: org-runners
+    runs-on: self-hosted
     steps:
 
       - uses: actions/checkout@v3
@@ -105,3 +105,4 @@ jobs:
       #   run: |
       #     argocd app sync python-app-v5
       #     argocd app wait python-app-v5 --timeout 180
+
